@@ -15,7 +15,7 @@ Install
 
 Examples
 --------
-Some jokes examples::
+Some jokes examples:: python
 
   from joke.jokes import *
   # This will import all joke-functions (geek, icanhazdad, chucknorris, icndb)
@@ -29,7 +29,7 @@ Some jokes examples::
   from random import choice
   print(choice([geek, icanhazdad, chucknorris, icndb])())
 
-Some quotes examples::
+Some quotes examples:: python
 
   from joke.quotes import *
 
