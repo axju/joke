@@ -11,7 +11,7 @@ Install
 -------
 ::
 
-  pip install joke
+  pip install axju-jokes
 
 Examples
 --------
@@ -89,7 +89,7 @@ Development
 -----------
 Clone repo::
 
-  git clone https://github.com/axju/txt2image.git
+  git clone https://github.com/axju/joke.git
 
 Create virtual environment and update dev-tools::
 

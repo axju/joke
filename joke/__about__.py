@@ -3,7 +3,7 @@ __all__ = [
     '__email__', '__license__', '__copyright__',
 ]
 
-__title__ = 'joke'
+__title__ = 'axju-jokes'
 __summary__ = 'Jokes for python'
 __url__ = 'https://github.com/axju/joke'
 
