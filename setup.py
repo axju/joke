@@ -30,6 +30,12 @@ setup(
         'html2text',
     ],
 
+    entry_points = {
+        'console_scripts': [
+            'joke=joke.__main__:main',
+        ],
+    },
+
     keywords='joke fun funny',
     classifiers=[
         'Intended Audience :: Developers',

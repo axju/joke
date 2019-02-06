@@ -7,7 +7,7 @@ __title__ = 'axju-jokes'
 __summary__ = 'Jokes for python'
 __url__ = 'https://github.com/axju/joke'
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 __author__ = 'Axel Juraske'
 __email__ = 'axel.juraske@short-report.de'

@@ -13,6 +13,29 @@ Install
 
   pip install axju-jokes
 
+
+Command line
+------------
+You can exit the function from the command line. There are two entry points:
+
+.. code-block:: shell
+
+  $ joke
+  $ python -m joke
+
+With no arguments, it will return a random joke, quote or fact. You can set one
+specifically API. For example some cat facts:
+
+.. code-block:: shell
+
+  $ joke cat
+
+Use help to see the possible API's:
+
+.. code-block:: shell
+
+  $ joke --help
+
 Examples
 --------
 Some jokes examples
