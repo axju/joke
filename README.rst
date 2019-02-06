@@ -13,7 +13,6 @@ Install
 
   pip install axju-jokes
 
-
 Command line
 ------------
 You can exit the function from the command line. There are two entry points:

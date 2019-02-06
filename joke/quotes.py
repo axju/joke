@@ -2,17 +2,21 @@ from requests import get
 from html2text import html2text
 from random import randint
 
+
 __all__ = ['quotesondesign', 'stormconsultancy']
 
+
 def get_quotesondesign(n):
-    r = get(f'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]={n}')
+    r = get('http://quotesondesign.com/wp-json/posts?'
+            f'filter[orderby]=rand&filter[posts_per_page]={n}')
     if r.status_code == 200:
         data = r.json()
         for d in data:
             yield {
                 'quote': html2text(d['content']).replace('\n', ' ').strip(),
                 'author': d['title'],
-                'id': d['ID'],}
+                'id': d['ID']}
+
 
 def quotesondesign(n=1, format='txt'):
     """
@@ -27,7 +31,8 @@ def quotesondesign(n=1, format='txt'):
         return data
 
     if format == 'txt':
-        return ['{}\n\n--{}'.format(data['quote'], data['author']) for data in get_quotesondesign(n)]
+        return ['{}\n\n--{}'.format(d['quote'], d['author'])
+                for d in get_quotesondesign(n)]
     else:
         return [data for data in get_quotesondesign(n)]
 
@@ -39,10 +44,11 @@ def get_stormconsultancy(id):
         return {
             'quote': data['quote'],
             'author': data['author'],
-            'id': id,}
+            'id': id}
+
 
 def stormconsultancy(id=None, format='txt'):
-    if not id or id<=0 or id>44:
+    if not id or id <= 0 or id > 44:
         id = randint(1, 44)
     data = get_stormconsultancy(id)
     if format == 'txt':

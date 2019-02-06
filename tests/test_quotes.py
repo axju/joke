@@ -10,7 +10,7 @@ class TestQuotes(unittest.TestCase):
         quotes = quotesondesign(5)
         self.assertEqual(len(quotes), 5)
 
-        for quote in quotesondesign(5):
+        for quote in quotes:
             self.assertTrue(len(quote)>0)
 
         data = quotesondesign(format='data')

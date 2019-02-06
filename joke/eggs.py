@@ -1,4 +1,4 @@
-from joke.jokes import *
+from joke.jokes import geek, icanhazdad, chucknorris, icndb
 from random import choice
 
 # display a random joke if the module are imported

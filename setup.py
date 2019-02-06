@@ -3,13 +3,16 @@ from setuptools import setup, find_packages
 
 base_dir = os.path.dirname(__file__)
 
+
 def readme():
     with open('README.rst') as f:
         return f.read()
 
+
 about = {}
 with open(os.path.join(base_dir, 'joke', '__about__.py')) as f:
     exec(f.read(), about)
+
 
 setup(
     name=about['__title__'],
@@ -30,7 +33,7 @@ setup(
         'html2text',
     ],
 
-    entry_points = {
+    entry_points={
         'console_scripts': [
             'joke=joke.__main__:main',
         ],
