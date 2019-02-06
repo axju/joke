@@ -16,6 +16,7 @@ Install
 Examples
 --------
 Some jokes examples
+
 .. code:: python
 
   from joke.jokes import *
@@ -31,6 +32,7 @@ Some jokes examples
   print(choice([geek, icanhazdad, chucknorris, icndb])())
 
 Some quotes examples
+
 .. code:: python
 
   from joke.quotes import *
