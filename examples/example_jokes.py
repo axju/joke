@@ -4,12 +4,12 @@ from joke.jokes import *
 all_jokes = [geek, icanhazdad, chucknorris, icndb]
 
 # For example you can display 10 Chuck Norris jokes.
-#for i in range(10):
-#    print(chucknorris())
+for i in range(10):
+    print(chucknorris())
 
 # Or get a random joke-function.
-#from random import choice
-#print(choice([geek, icanhazdad, chucknorris, icndb])())
+from random import choice
+print(choice([geek, icanhazdad, chucknorris, icndb])())
 
 for func in all_jokes:
     print(func())

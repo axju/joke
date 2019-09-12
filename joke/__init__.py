@@ -1,9 +1,9 @@
-from joke.__about__ import (
-    __author__, __copyright__, __email__, __license__, __summary__, __title__,
-    __url__, __version__
-)
+"""nothing to say here"""
+from pkg_resources import get_distribution, DistributionNotFound
 
-__all__ = [
-    '__title__', '__summary__', '__url__', '__version__', '__author__',
-    '__email__', '__license__', '__copyright__',
-]
+try:
+    __version__ = get_distribution(__name__).version
+except DistributionNotFound:
+    __version__ = 'unknown'
+finally:
+    del get_distribution, DistributionNotFound

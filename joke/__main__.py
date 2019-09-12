@@ -1,7 +1,6 @@
 import argparse
 from random import choice
 
-from joke import __summary__
 from joke.jokes import geek, icanhazdad, chucknorris, icndb
 from joke.quotes import quotesondesign, stormconsultancy
 from joke.facts import cat
@@ -18,7 +17,7 @@ map_func = {
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__summary__)
+    parser = argparse.ArgumentParser(description='Jokes for python')
     parser.add_argument('func', nargs='?', choices=[s for s in map_func])
     args = parser.parse_args()
 

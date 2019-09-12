@@ -20,6 +20,6 @@ print(stormconsultancy())
 print(stormconsultancy(id=2))
 
 # the stormconsultancy-function give you also the data
-data =stormconsultancy(id=2, format='data')
+data = stormconsultancy(id=2, format='data')
 print(data['quote'])
 print(data['author'])

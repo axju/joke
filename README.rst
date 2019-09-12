@@ -1,6 +1,22 @@
 ====
 joke
 ====
+.. image:: https://img.shields.io/pypi/v/axju-jokes
+   :alt: PyPI
+   :target: https://pypi.org/project/axju-jokes/
+
+.. image:: https://img.shields.io/pypi/pyversions/axju-jokes
+   :alt: Python Version
+   :target: https://pypi.org/project/axju-jokes/
+
+.. image:: https://img.shields.io/pypi/wheel/axju-jokes
+   :alt: Wheel
+   :target: https://pypi.org/project/axju-jokes/
+
+.. image:: https://img.shields.io/pypi/implementation/axju-jokes
+   :alt: Implementation
+   :target: https://pypi.org/project/axju-jokes/
+
 Jokes for python.
 
 I was really sad, no package called joke. So I decided to create one, really
@@ -113,15 +129,23 @@ Clone repo::
 
   git clone https://github.com/axju/joke.git
 
-Create virtual environment and update dev-tools::
+Create virtual environment for Linux::
 
   python3 -m venv venv
   source venv/bin/activate
-  pip install --upgrade wheel pip setuptools twine tox
+
+Create virtual environment for Windows::
+
+  python -m venv venv
+  .\venv\Scripts\activate
+
+Update dev-tools::
+
+  python -m pip install --upgrade wheel pip setuptools twine tox flake8
 
 Install local::
 
-  pip install -e .
+  python setup.py develop
 
 Run some tests::
 
@@ -131,5 +155,9 @@ Run some tests::
 
 Publish the packages::
 
+  git tag -a 1.0.2
+
+  python setup.py --version
+  python setup.py check
   python setup.py sdist bdist_wheel
   twine upload dist/*

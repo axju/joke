@@ -5,7 +5,7 @@ class TestQuotes(unittest.TestCase):
 
     def test_quotesondesign(self):
         quote = quotesondesign()
-        self.assertTrue(len(quote)>0)
+        self.assertTrue(quote)
 
         quotes = quotesondesign(5)
         self.assertEqual(len(quotes), 5)
