@@ -155,8 +155,8 @@ Run some tests::
 
 Publish the packages::
 
-  git tag -a 1.0.2
-
+  git tag -a 1.0.3 -m '1.0.3'
+  git push origin 1.0.3
   python setup.py --version
   python setup.py check
   python setup.py sdist bdist_wheel
