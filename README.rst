@@ -21,8 +21,8 @@ joke
    :alt: Downloads
    :target: https://pypi.org/project/axju-jokes/
 
-.. image:: https://img.shields.io/github/license/axju/joke
-   :alt: GitHub
+.. image:: https://img.shields.io/pypi/l/axju-jokes
+   :alt: License
    :target: https://pypi.org/project/axju-jokes/
 
 Jokes for python.
