@@ -17,6 +17,14 @@ joke
    :alt: Implementation
    :target: https://pypi.org/project/axju-jokes/
 
+.. image:: https://img.shields.io/pypi/dm/axju-jokes
+   :alt: Downloads
+   :target: https://pypi.org/project/axju-jokes/
+
+.. image:: https://img.shields.io/github/license/axju/joke
+   :alt: GitHub
+   :target: https://pypi.org/project/axju-jokes/
+
 Jokes for python.
 
 I was really sad, no package called joke. So I decided to create one, really
